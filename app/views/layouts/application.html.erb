@@ -16,7 +16,8 @@
   <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    <% if controller_name != "registrations" && controller_name != "sessions" %>
+    <% if controller_name != "registrations" && controller_name != "sessions" && controller_name != "passwords" %>
+      <%= controller_name %>
       <%= render "layouts/header" %>
     <% end %>
     <%= yield %>
