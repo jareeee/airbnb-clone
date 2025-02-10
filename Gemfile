@@ -6,6 +6,8 @@ gem "rails", "~> 7.1.2"
 
 gem "bootsnap", require: false
 
+gem 'devise', '~> 4.9', '>= 4.9.3'
+
 gem "importmap-rails"
 
 gem "jbuilder"
