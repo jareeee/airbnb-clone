@@ -2,7 +2,7 @@
   <div class="mx-auto max-w-2xl px-4 sm:px-6 sm:py-8 lg:max-w-7xl lg:px-8">
     <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
 
-      <% 10.times do %>
+      <% @properties.each do |property| %>
         <div class="group relative">
           <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75">
             <img src="https://a0.muscache.com/im/pictures/miso/Hosting-997808963193393698/original/86d5291d-cffe-4b0f-bd54-fc223d0aa31b.jpeg?im_w=720&im_format=avif" alt="Luxury 4 - Bedroom West Jakarta House JivaLaras - Vila untuk Disewakan di Kecamatan Kembangan, Daerah Khusus Ibukota Jakarta, Indonesia - Airbnb" class="h-full w-full object-cover object-center lg:h-full lg:w-full">
@@ -13,7 +13,7 @@
               <h3 class="text-base font-medium text-gray-700">
                 <a href="#">
                   <span aria-hidden="true" class="absolute inset-0"></span>
-                  Balamban, Filipina
+                  <%= property.city %>, <%= property.country %>
                 </a>
               </h3>
 

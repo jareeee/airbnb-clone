@@ -8,6 +8,8 @@ gem "bootsnap", require: false
 
 gem 'devise', '~> 4.9', '>= 4.9.3'
 
+gem 'faker'
+
 gem "importmap-rails"
 
 gem "jbuilder"
