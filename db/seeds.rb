@@ -1,9 +1,3 @@
-require 'faker'
-
-# Clear existing properties
-Property.delete_all
-
-# Create random properties
 10.times do
   Property.create!(
     name: Faker::Lorem.words(number: 3).join(' '),
@@ -14,5 +8,6 @@ Property.delete_all
     city: Faker::Address.city,
     state: Faker::Address.state,
     country: Faker::Address.country,
+    price: Money.from_amount(rand(30_000..100_000), 'IDR'),
   )
 end
