@@ -12,6 +12,8 @@ gem 'faker'
 
 gem "importmap-rails"
 
+gem "image_processing", ">= 1.2"
+
 gem "jbuilder"
 
 gem 'money-rails', '~> 1.12'
