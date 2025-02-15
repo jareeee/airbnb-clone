@@ -13,7 +13,7 @@ user = User.create!(
     city: Faker::Address.city,
     state: Faker::Address.state,
     country: Faker::Address.country,
-    price: Money.from_amount(rand(30_000..100_000), 'IDR'),
+    price: Money.from_amount(rand(1_000_000..5_000_000), 'IDR'),
   )
 
   property.images.attach(io: File.open("db/images/property_#{i + 1}.png"), filename: property.name)
